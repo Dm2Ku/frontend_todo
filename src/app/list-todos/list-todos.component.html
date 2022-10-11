@@ -1,0 +1,33 @@
+<h1> Todo </h1>
+
+<div class="alert alert-success" *ngIf='message'>{{message}}</div>
+
+<div class="container" data-background-color="green">
+<table class="todos table table-hover table-mc-green">
+
+  <caption> Todo </caption>
+  <thead>
+  <tr>
+    <th>Description</th>
+    <th>Target Date</th>
+    <th>is Completed?</th>
+    <th>Update</th>
+    <th>Delete</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <!-- for (Todo todo: todos) -->
+  <tr *ngFor="let todo of todos">
+    <td>{{todo.description}}</td>
+    <td>{{todo.targetDate | date | uppercase | titlecase}}</td>
+    <td>{{todo.done}}</td>
+    <td><button (click)="updateTodo(todo.id)" class="btn btn-success">Update</button></td>
+    <td><button (click)="deleteTodo(todo.id)" class="btn btn-warning">Delete</button></td>
+  </tr>
+  </tbody>
+
+
+</table>
+</div>
+

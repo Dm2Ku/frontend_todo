@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\error",
+    "\\src\\app\\login",
+    "\\src\\app\\welcome"
+  ],
+  "SelectedNode": "\\src\\app\\error\\error.component.html",
+  "PreviewInSolutionExplorer": false
+}
