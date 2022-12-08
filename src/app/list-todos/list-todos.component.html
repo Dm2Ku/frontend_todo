@@ -3,8 +3,8 @@
 <div class="alert alert-success" *ngIf='message'>{{message}}</div>
 
 <div class="container" data-background-color="green">
-<table class="todos table table-hover table-mc-green">
-
+<table class="table">
+<!--//  todos table table-hover table-mc-green-->
   <caption> Todo </caption>
   <thead>
   <tr>
@@ -29,5 +29,10 @@
 
 
 </table>
+
+  <div class="row">
+    <button (click)="addTodo()" class="btn btn-success">Add</button>
+
+  </div>
 </div>
 
